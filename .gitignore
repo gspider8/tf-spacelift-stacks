@@ -1,0 +1,7 @@
+# PyCharm
+.idea/
+
+# Terraform/OpenTofu
+.terraform/
+*.tfstate
+*.tfstate.*
