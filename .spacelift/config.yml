@@ -5,7 +5,12 @@ module_version: 0.1.0
 
 # Any default settings that should be used for all test cases
 test_defaults:
-  before_init: ["tofu fmt -check"]
+  before_init: ["tofu fmt -recursive -check"]
+  project_root: examples/simple-stack
 
 # Place tests here
-# verify that context was attached to stack
+tests:
+  - name: simple-stack with tofu 1.6.2
+    terraform_version: 1.6.2
+  - name: simple-stack with tofu 1.9.0
+    terraform_version: 1.9.0
