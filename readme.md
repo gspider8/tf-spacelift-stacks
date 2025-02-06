@@ -1,4 +1,10 @@
-# Saturnhead Spacelift Stacks Module
+# Saturnhead Spacelift Stacks Module Modified
+- administrative module
+
+### Compatability
+- Must be placed in the root module of the account of interest. (for tests to work)
+- OpenTofu Versions: 
+- Spacelift Provider Versions:
 
 ### Module Input Variables
 `stacks` - A map of stack configurations.

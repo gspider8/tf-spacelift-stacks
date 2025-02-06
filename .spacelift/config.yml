@@ -8,3 +8,4 @@ test_defaults:
   before_init: ["tofu fmt -check"]
 
 # Place tests here
+# verify that context was attached to stack
