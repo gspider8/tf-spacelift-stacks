@@ -5,7 +5,7 @@ module "stacks" {
       # General Characteristics
       description = "This stack is used to build... for..."
       labels      = ["my-stack", "my-env"] # Labels can be very powerful in combination with autoattach
-      space_id    = var.space_id
+      space_id    = local.space_id
 
       # VCS - Defaults to GitHub
       # For this example we will use a build included in this directory
@@ -24,7 +24,7 @@ module "stacks" {
 
   contexts = {
     my-context = {
-      space_id    = var.space_id
+      space_id    = local.space_id
       description = "Context with variables used by my stack."
       labels      = ["autoattach:my-stack"] # my-stack must be on your stack for them to attach.
     }
