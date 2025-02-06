@@ -63,7 +63,10 @@
 - See Examples
 
 ### Outputs
--
+Outputs will have matching keys from the input for all created resources.
+- `stacks`
+- `contexts`
+- `env_vars`
 
 ### Authors
 - gspider8
