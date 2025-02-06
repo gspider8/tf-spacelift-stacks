@@ -16,9 +16,9 @@ module "stacks" {
       project_root = "examples/simple-stack/stack-to-build"
 
       # Run Configuration
-      administrative          = false
-      terraform_workflow_tool = "OPEN_TOFU"
-      terraform_version       = "^1.9.0"
+      administrative   = false
+      tf_workflow_tool = "OPEN_TOFU"
+      tf_version       = "^1.9.0"
     }
   }
 
