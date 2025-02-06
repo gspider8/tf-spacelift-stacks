@@ -8,6 +8,5 @@ data "spacelift_current_space" "this" {
 }
 
 locals {
-  space_id = var.spacelift_local_test ?
-    "root" : data.spacelift_current_space.this.id
+  space_id = var.spacelift_local_test ? "root" : data.spacelift_current_space.this[0].id
 }
